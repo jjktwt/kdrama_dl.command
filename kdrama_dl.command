@@ -19,7 +19,7 @@
 #
 
 # Current working dir
-SCRIPT_VERSION='1.0.1'
+SCRIPT_VERSION='1.0.2'
 CWD=`pwd`
 DOWNLOAD_FOLDER="$CWD/downloads"
 SCRIPT_PATH=`dirname "$0"`
@@ -44,7 +44,7 @@ function wait_ack {
 trap '{ echo -e "\n${C_FAIL}Interrupt detected. Download aborted.${C_END}" ; wait_ack; }' INT
 
 # Check for update
-latest_hash=$(curl -sL 'https://raw.githubusercontent.com/lastmodified/kdrama_dl.command/master/kdrama_dl.command' | md5 -q)
+latest_hash=$(curl -sL 'https://raw.githubusercontent.com/ArmsAsuncion/kdrama_dl.command/master/kdrama_dl.command' | md5 -q)
 current_hash=$(md5 -q "$SCRIPT_PATH/kdrama_dl.command")
 
 if [ "$latest_hash" != "$current_hash" ]; then
