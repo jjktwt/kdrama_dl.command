@@ -73,8 +73,7 @@ echo -e -n "Enter ${C_OKBLUE}Download Code${C_END}: "
 read dcode
 
 if [ -z $dcode ]; then
-    echo -e "${C_FAIL}[!] Download code cannot be blank.${C_END}"
-    exit 1
+    echo -e "${C_FAIL}[!] Download code cannot be blank.${C_END}" 78374c67414f4a736f506e5055432f4d726376505552457067713237314a4d4e4d64547932474a3750432b326433492f742b306e44373574417947415472704c5a6c4268635568434d6e6b726430747254304e516444493056327843527a56535532315962327444616d597962316c4e5247396a626c4278656e644751554e6b61484530656b524f64335a36516b4632654664724d574a6e566b4a4452473472546c5a7951545658546a59795455784f5233633950513d3d    exit 1
 fi
 
 echo -e "The resolution must be available on the video page. Please check before entering."
